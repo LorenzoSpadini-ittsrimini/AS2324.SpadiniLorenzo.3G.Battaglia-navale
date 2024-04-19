@@ -7,9 +7,6 @@ namespace Battaglia_navale
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-
-        }
+        
     }
 }
