@@ -21,14 +21,12 @@
             txtRighe = new TextBox();
             txtColonne = new TextBox();
             btnCerca = new Button();
-            dgwGiocatore1 = new DataGridView();
-            dgwGiocatore2 = new DataGridView();
             lblGiocatore = new Label();
             lblGiocatore1 = new Label();
             lblGiocatore2 = new Label();
             btnAvvia = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgwGiocatore1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgwGiocatore2).BeginInit();
+            lstCampo1 = new ListBox();
+            lstCampo2 = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -72,24 +70,6 @@
             btnCerca.Text = "Cerca";
             btnCerca.UseVisualStyleBackColor = true;
             // 
-            // dgwGiocatore1
-            // 
-            dgwGiocatore1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgwGiocatore1.Location = new Point(94, 290);
-            dgwGiocatore1.Name = "dgwGiocatore1";
-            dgwGiocatore1.RowHeadersWidth = 51;
-            dgwGiocatore1.Size = new Size(300, 188);
-            dgwGiocatore1.TabIndex = 5;
-            // 
-            // dgwGiocatore2
-            // 
-            dgwGiocatore2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgwGiocatore2.Location = new Point(601, 290);
-            dgwGiocatore2.Name = "dgwGiocatore2";
-            dgwGiocatore2.RowHeadersWidth = 51;
-            dgwGiocatore2.Size = new Size(300, 188);
-            dgwGiocatore2.TabIndex = 6;
-            // 
             // lblGiocatore
             // 
             lblGiocatore.AutoSize = true;
@@ -102,7 +82,7 @@
             // lblGiocatore1
             // 
             lblGiocatore1.AutoSize = true;
-            lblGiocatore1.Location = new Point(200, 247);
+            lblGiocatore1.Location = new Point(180, 247);
             lblGiocatore1.Name = "lblGiocatore1";
             lblGiocatore1.Size = new Size(50, 20);
             lblGiocatore1.TabIndex = 8;
@@ -111,7 +91,7 @@
             // lblGiocatore2
             // 
             lblGiocatore2.AutoSize = true;
-            lblGiocatore2.Location = new Point(724, 247);
+            lblGiocatore2.Location = new Point(710, 247);
             lblGiocatore2.Name = "lblGiocatore2";
             lblGiocatore2.Size = new Size(50, 20);
             lblGiocatore2.TabIndex = 9;
@@ -126,36 +106,51 @@
             btnAvvia.Text = "Avvia";
             btnAvvia.UseVisualStyleBackColor = true;
             // 
+            // lstCampo1
+            // 
+            lstCampo1.FormattingEnabled = true;
+            lstCampo1.Location = new Point(80, 302);
+            lstCampo1.Name = "lstCampo1";
+            lstCampo1.Size = new Size(349, 184);
+            lstCampo1.TabIndex = 13;
+            // 
+            // lstCampo2
+            // 
+            lstCampo2.FormattingEnabled = true;
+            lstCampo2.Location = new Point(589, 302);
+            lstCampo2.Name = "lstCampo2";
+            lstCampo2.Size = new Size(329, 184);
+            lstCampo2.TabIndex = 14;
+            // 
             // Form1
             // 
             ClientSize = new Size(984, 527);
+            Controls.Add(lstCampo2);
+            Controls.Add(lstCampo1);
             Controls.Add(btnAvvia);
             Controls.Add(lblGiocatore2);
             Controls.Add(lblGiocatore1);
             Controls.Add(lblGiocatore);
-            Controls.Add(dgwGiocatore2);
-            Controls.Add(dgwGiocatore1);
             Controls.Add(btnCerca);
             Controls.Add(txtColonne);
             Controls.Add(txtRighe);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
-            ((System.ComponentModel.ISupportInitialize)dgwGiocatore1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgwGiocatore2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
+
         private Label label1;
         private Label label2;
         private TextBox txtRighe;
         private TextBox txtColonne;
         private Button btnCerca;
-        private DataGridView dgwGiocatore1;
-        private DataGridView dgwGiocatore2;
         private Label lblGiocatore;
         private Label lblGiocatore1;
         private Label lblGiocatore2;
         private Button btnAvvia;
+        private ListBox lstCampo1;
+        private ListBox lstCampo2;
     }
 }
