@@ -110,17 +110,17 @@
             // lstCampo1
             // 
             lstCampo1.FormattingEnabled = true;
-            lstCampo1.Location = new Point(80, 302);
+            lstCampo1.Location = new Point(12, 302);
             lstCampo1.Name = "lstCampo1";
-            lstCampo1.Size = new Size(349, 184);
+            lstCampo1.Size = new Size(463, 204);
             lstCampo1.TabIndex = 13;
             // 
             // lstCampo2
             // 
             lstCampo2.FormattingEnabled = true;
-            lstCampo2.Location = new Point(589, 302);
+            lstCampo2.Location = new Point(517, 302);
             lstCampo2.Name = "lstCampo2";
-            lstCampo2.Size = new Size(329, 184);
+            lstCampo2.Size = new Size(455, 204);
             lstCampo2.TabIndex = 14;
             // 
             // Form1

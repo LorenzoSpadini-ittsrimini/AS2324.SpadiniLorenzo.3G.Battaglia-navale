@@ -8,19 +8,12 @@ namespace Battaglia_navale
 
         public Form1()
         {
-
-            
-
             InitializeComponent();
-
 
             while (!partitaTerminata)
             {
 
-
             }
-
-            
 
         }
 
@@ -49,10 +42,33 @@ namespace Battaglia_navale
             }
         }
 
-        private void btnAvvia_Click(object sender, EventArgs e)
+        void DisegnaCampo()
         {
-            PosizionaBarche(campo1);
-            PosizionaBarche(campo2);
+            lstCampo1.Items.Clear();
+            lstCampo2.Items.Clear();
+
+            for (int i = 0; i < 10; i++)
+            {
+                string rigaCampo1 = "";
+                string rigaCampo2 = "";
+
+                for (int j = 0; j < 10; j++)
+                {
+                    rigaCampo1 += ".          ";
+                    rigaCampo2 += ".          ";
+                }
+
+                lstCampo1.Items.Add(rigaCampo1);
+                lstCampo2.Items.Add(rigaCampo2);
+            }
+        }
+
+            private void btnAvvia_Click(object sender, EventArgs e)
+            {
+                PosizionaBarche(campo1);
+                PosizionaBarche(campo2);
+                DisegnaCampo();
+            }
         }
     }
-}
+
