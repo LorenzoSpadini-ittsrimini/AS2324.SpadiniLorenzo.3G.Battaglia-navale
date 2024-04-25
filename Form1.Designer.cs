@@ -105,6 +105,7 @@
             btnAvvia.TabIndex = 12;
             btnAvvia.Text = "Avvia";
             btnAvvia.UseVisualStyleBackColor = true;
+            btnAvvia.Click += btnAvvia_Click;
             // 
             // lstCampo1
             // 
